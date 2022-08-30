@@ -7,24 +7,8 @@ const routes: RouteRecordRaw[] = [
     component: () => import('@/views/Home/index.vue'),
   },
   {
-    path: '/essays',
-    component: () => import('@/views/Essays/index.vue'),
-  },
-  {
     path: '/share',
     component: () => import('@/views/Share/index.vue'),
-  },
-  {
-    path: '/web',
-    component: () => import('@/views/Web/index.vue'),
-  },
-  {
-    path: '/game',
-    component: () => import('@/views/Share/components/game.vue'),
-  },
-  {
-    path: '/music',
-    component: () => import('@/views/Music/index.vue'),
   },
 ]
 
