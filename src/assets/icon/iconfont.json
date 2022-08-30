@@ -1,0 +1,30 @@
+{
+  "id": "3016238",
+  "name": "Burry-Blog",
+  "font_family": "iconfont",
+  "css_prefix_text": "burry-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "768813",
+      "name": "个性化",
+      "font_class": "shouye",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "4936987",
+      "name": "weibo",
+      "font_class": "weibo",
+      "unicode": "e882",
+      "unicode_decimal": 59522
+    },
+    {
+      "icon_id": "10932452",
+      "name": "bilibili-line",
+      "font_class": "bilibili-line",
+      "unicode": "e69e",
+      "unicode_decimal": 59038
+    }
+  ]
+}
