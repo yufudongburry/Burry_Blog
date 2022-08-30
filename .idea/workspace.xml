@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="04ff9f0b-b226-4516-823f-dcd75fbe1a39" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/src/jsonData/monthAbbList.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/time.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RightRecently.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RightRecently.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainContentTop.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainContentTop.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/type.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBowerSettings">
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2AbWnGG5F86gNsvmX33WM7msxOa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "14.15.1",
+    "javascript.nodejs.core.library.typings.version": "14.18.21",
+    "last_opened_file_path": "E:/project/Burry_Blog_Service",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.stylelint": "E:\\project\\Burry_Blog\\node_modules\\stylelint",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.meteor",
+    "settings.editor.splitter.proportion": "0.26272914",
+    "ts.external.directory.path": "E:\\project\\Burry_Blog\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\project\Burry_Blog\src\assets\img" />
+      <recent name="E:\project\Burry_Blog\src\store\modeuls" />
+      <recent name="E:\project\Burry_Blog\src\views\Music\components" />
+      <recent name="E:\project\Burry_Blog\src\assets\img\gif" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="04ff9f0b-b226-4516-823f-dcd75fbe1a39" name="Changes" comment="" />
+      <created>1655278932768</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655278932768</updated>
+      <workItem from="1655278935480" duration="517000" />
+      <workItem from="1655279469551" duration="2344000" />
+      <workItem from="1655282213478" duration="313000" />
+      <workItem from="1655282543633" duration="5914000" />
+      <workItem from="1655342817822" duration="454000" />
+      <workItem from="1655343320385" duration="15286000" />
+      <workItem from="1655451152050" duration="8764000" />
+      <workItem from="1655689719289" duration="3885000" />
+      <workItem from="1655862156497" duration="5707000" />
+      <workItem from="1655881881616" duration="11534000" />
+      <workItem from="1655965625385" duration="33564000" />
+      <workItem from="1656313760392" duration="6106000" />
+      <workItem from="1659602346001" duration="8642000" />
+      <workItem from="1660200531552" duration="22382000" />
+      <workItem from="1660617271651" duration="169000" />
+      <workItem from="1660617467970" duration="7113000" />
+      <workItem from="1660700476915" duration="127000" />
+      <workItem from="1660700656127" duration="5681000" />
+      <workItem from="1660728938120" duration="2213000" />
+      <workItem from="1661581293344" duration="83000" />
+      <workItem from="1661581498484" duration="9125000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="xian_yfd_dev_v0.0.1" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
