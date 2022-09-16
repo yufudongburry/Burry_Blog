@@ -26,38 +26,22 @@
     <!-- 返回顶部 -->
     <el-backtop />
   </div>
-  <!-- 小猫进度条 -->
-  <!--  <div class="scroll-img" :style="{top:state.topWidth}">-->
-  <!--    <img src="@/assets/img/mao.png" alt="">-->
-  <!--  </div>-->
 </template>
 
 <script setup lang="ts">
-import { reactive, onMounted } from 'vue'
+import { reactive } from 'vue'
 import { appTypeState } from '@/appType'
-// import cookie from '@/storage/cookies'
-import _ from 'lodash'
 import LeftInfo from '@/components/LeftInfo.vue'
 import RightRecently from '@/components/RightRecently.vue'
 import MainContentTop from '@/components/mainContentTop.vue'
 
 const state = reactive<appTypeState>({
-  // token: '',
-  // topWidth: '',
   searchData: '',
 })
-// 获取滚动条回调
-// const getScroll = (): void => {
-//   let top = Math.floor(document.body.scrollTop || document.documentElement.scrollTop || window.pageYOffset)
-//   state.topWidth = (top - 700 < 0) ? top - 700 + 'px' : '0px'
-// }
 // 搜索
 const searchChange = (): void => {
   console.log(state.searchData)
 }
-onMounted(() => {
-  // window.addEventListener('scroll', _.throttle(getScroll, 10), true)
-})
 </script>
 
 <style lang="scss">

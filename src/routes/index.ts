@@ -7,6 +7,10 @@ const routes: RouteRecordRaw[] = [
     component: () => import('@/views/Home/index.vue'),
   },
   {
+    path: '/admin-puilsh',
+    component: () => import('@/views/Management/blogPublish/index.vue')
+  },
+  {
     path: '/share',
     component: () => import('@/views/Share/index.vue'),
   },
