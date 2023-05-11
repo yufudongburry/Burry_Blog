@@ -1,44 +1,56 @@
 <template>
-  <div class="box-home box">
-    <!-- 轮播图 -->
-    <Carousel></Carousel>
-    <!-- title -->
-    <div class="home-title">
-      <el-divider>欢迎来到Burry的手工作坊</el-divider>
+  <div class="home-first-screen">
+    <div class="home-tag">
+      <div class="tag-title" data-value="HI, CUTEBABY!">HI, CUTEBABY!</div>
+      <div class="tag-content">
+        <div class="tag-text">死は生の対極としてではなく、その一部として存在している。</div>
+        <div class="tag-link">
+          <svg
+            class="link-item"
+            v-for="(item,index) in socialMedia"
+            :key="index"
+            @click="toLink(item)"
+          >
+            <use :xlink:href="`${svgIcons}${item.icon}`"></use>
+          </svg>
+        </div>
+      </div>
     </div>
-    <!-- 内容 -->
-    <AllArticleList></AllArticleList>
   </div>
+  <HomeContent />
 </template>
 
 <script setup lang="ts">
-import { reactive, onMounted } from 'vue'
-import Carousel from './components/Carousel.vue'
-import AllArticleList from './components/AllArticleList.vue'
+import { reactive } from 'vue'
+import svgIcons from '@/assets/img/yancey-official-blog-svg-icons.svg';
+import HomeContent from './components/HomeContent.vue'
 
-const state = reactive({
-  
-})
+const socialMedia = [
+  {
+    label:'github',
+    url: 'https://github.com/yufudongburry',
+    icon: '#github'
+  },
+  {
+    label:'wechat',
+    url: '/',
+    icon: '#wechat'
+  },
+  {
+    label: 'email',
+    url: 'mailto:yufudongburry@outlook.com',
+    icon: '#mail'
+  }
+]
 
-onMounted(() => {
-  
-})
+
+const toLink = (item: object): any => {
+  if(item.label != 'wechat') return window.open(item.url)
+}
+
 </script>
 
-<style lang="scss" scoped>
-.box-home {
-  width: 750px;
-  min-height: 837px;
-  margin: 0 auto;
-  padding: 20px;
-  box-sizing: border-box;
-}
-.home-title{
-  margin-top: 30px;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-.home-title:deep(.el-divider__text){
-  font-weight: bold;
-}
+<style lang="scss">
+$img: '../../assets/img';
+@import "./styles/index.scss";
 </style>

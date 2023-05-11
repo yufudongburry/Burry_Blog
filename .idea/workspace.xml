@@ -2,12 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04ff9f0b-b226-4516-823f-dcd75fbe1a39" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/src/jsonData/monthAbbList.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/time.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/dot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/yancey-official-blog-svg-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/BlogItem/components/ItemImg.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/BlogItem/components/ItemText.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/BlogItem/components/styles/itemImg.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/BlogItem/components/styles/itemText.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/BlogItem/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Player.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/styles/blogItem.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/styles/header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/styles/player.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Home/components/HomeContent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Home/styles/homeContent.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Home/styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RightRecently.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RightRecently.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mainContentTop.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainContentTop.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/style/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/style/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/style/varibles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/style/varibles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LeftInfo.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MenuInfo.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RightRecently.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainContentTop.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/type.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/http/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/http/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/components/AllArticleList.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/components/Carousel.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/homeType.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Management/blogPublish/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Share/components/game.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Share/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Share/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +81,7 @@
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "14.15.1",
     "javascript.nodejs.core.library.typings.version": "14.18.21",
-    "last_opened_file_path": "E:/project/Burry_Blog_Service",
+    "last_opened_file_path": "E:/project/Burry_Blog/src/assets/img",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.stylelint": "true",
@@ -59,16 +91,20 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "settings.meteor",
     "settings.editor.splitter.proportion": "0.26272914",
-    "ts.external.directory.path": "E:\\project\\Burry_Blog\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "C:\\Users\\PC608\\AppData\\Local\\JetBrains\\WebStorm 2022.1.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project\Burry_Blog\src\assets\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\project\Burry_Blog\src\components\BlogItem" />
+      <recent name="E:\project\Burry_Blog\src" />
       <recent name="E:\project\Burry_Blog\src\assets\img" />
       <recent name="E:\project\Burry_Blog\src\store\modeuls" />
       <recent name="E:\project\Burry_Blog\src\views\Music\components" />
-      <recent name="E:\project\Burry_Blog\src\assets\img\gif" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -100,6 +136,13 @@
       <workItem from="1660728938120" duration="2213000" />
       <workItem from="1661581293344" duration="83000" />
       <workItem from="1661581498484" duration="9125000" />
+      <workItem from="1675157679764" duration="2410000" />
+      <workItem from="1675332930123" duration="1340000" />
+      <workItem from="1675671109236" duration="8449000" />
+      <workItem from="1675752527784" duration="8487000" />
+      <workItem from="1678171535525" duration="1498000" />
+      <workItem from="1678173649589" duration="14307000" />
+      <workItem from="1678243645718" duration="19201000" />
     </task>
     <servers />
   </component>

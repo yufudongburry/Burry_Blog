@@ -1,21 +1,5 @@
 <template>
   <div class="box-share box">
-    <!-- 益智小游戏 -->
-    <div v-if="false" class="game-box">
-      <div class="title">益智小游戏</div>
-      <div class="game-list">
-        <div
-          v-for="item in state.gameList"
-          :key="item.id"
-          class="game-list-item"
-          :style="{background:item.color}"
-          @click="toGame(item)"
-        >
-          {{ item.name }}
-        </div>
-      </div>
-    </div>
-
     <!-- 下班倒计时 -->
     <div class="time-box">
       <div class="title">
@@ -101,11 +85,9 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, onMounted, ref, onBeforeUnmount, computed } from 'vue'
-import { useRouter } from 'vue-router'
-import { GameTypeState, TimeTypeState, SetFormState } from './shareType'
+import { reactive, onMounted, ref, onBeforeUnmount } from 'vue'
+import { TimeTypeState, SetFormState } from './shareType'
 import moment from 'moment'
-import { Close, Check } from '@element-plus/icons-vue'
 import type { ElForm } from 'element-plus'
 import type { FormRulesMap } from 'element-plus/es/components/form/src/form.type'
 import { SessionStorageService } from '@/utils/session'
@@ -114,8 +96,6 @@ import { SessionStorageService } from '@/utils/session'
 type ElFormInstance = InstanceType<typeof ElForm>
 
 onMounted(() => {
-  // 获取随机颜色
-  getColor()
   // 执行一次金额避免空白
   getCompensation()
   // 监测当前时间
@@ -138,83 +118,7 @@ onBeforeUnmount(() => {
 
 // 时间处理函数
 const timeResult = (value: number, format: string): string => moment(value).format(format || 'YYYY-MM-DD HH:mm:ss')
-const router = useRouter()
 
-// 益智小游戏js
-const state = reactive<GameTypeState>({
-  gameList: [
-    {
-      name: '身高计算',
-      id: 1,
-      color: 'rgba(' + Math.floor(Math.random() * 255) + ','
-			+ Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ',0.8)',
-    },
-    {
-      name: '年龄计算',
-      id: 2,
-      color: 'rgba(' + Math.floor(Math.random() * 255) + ','
-			+ Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ',0.8)',
-    },
-    {
-      name: '血压测量',
-      id: 3,
-      color: 'rgba(' + Math.floor(Math.random() * 255) + ','
-			+ Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ',0.8)',
-    },
-    {
-      name: '物流查询',
-      id: 4,
-      color: 'rgba(' + Math.floor(Math.random() * 255) + ','
-			+ Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ',0.8)',
-    },
-    {
-      name: '下班倒计时',
-      id: 5,
-      color: 'rgba(' + Math.floor(Math.random() * 255) + ','
-			+ Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ',0.8)',
-    },
-    {
-      name: '天气预报',
-      id: 6,
-      color: 'rgba(' + Math.floor(Math.random() * 255) + ','
-			+ Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ',0.8)',
-    },
-    {
-      name: '智能电风扇',
-      id: 7,
-      color: 'rgba(' + Math.floor(Math.random() * 255) + ','
-			+ Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ',0.8)',
-    },
-    {
-      name: '干饭人辅助器',
-      id: 8,
-      color: 'rgba(' + Math.floor(Math.random() * 255) + ','
-			+ Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ',0.8)',
-    },
-    {
-      name: '这个你猜',
-      id: 9,
-      color: 'rgba(' + Math.floor(Math.random() * 255) + ','
-			+ Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ',0.8)',
-    },
-  ],
-  color: '',
-})
-const getColor = (): void => {
-  let r = Math.floor(Math.random() * 255)
-  let g = Math.floor(Math.random() * 255)
-  let b = Math.floor(Math.random() * 255)
-  state.color = 'rgba(' + r + ',' + g + ',' + b + ',0.8)'
-}
-const toGame = (item: any): void => {
-  router.push({
-    path: '/game',
-    query: {
-      id: item.id,
-      name: item.name,
-    },
-  })
-}
 
 // 下班倒计时js
 const timeState = reactive<TimeTypeState>({
@@ -303,31 +207,6 @@ const getCompensation = ():void => {
   margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
-}
-.game-box {
-  width: 100%;
-}
-.game-list {
-  width: 100%;
-  padding: 20px 20px 0 20px;
-  box-sizing: border-box;
-}
-.game-list-item {
-  width: 190px;
-  height: 50px;
-  margin-right: 50px;
-  margin-bottom: 20px;
-  border-radius: 7px;
-  font-size: 18px;
-  text-align: center;
-  line-height: 50px;
-  cursor: pointer;
-  color: #fff;
-  display: inline-block;
-
-  &:nth-child(3n) {
-    margin-right: 0;
-  }
 }
 .countdown {
   text-align: center;

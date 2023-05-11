@@ -4,16 +4,25 @@ import type { App } from 'vue'
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
+    meta: {
+      isHeader: true
+    },
     component: () => import('@/views/Home/index.vue'),
   },
   {
-    path: '/admin-puilsh',
-    component: () => import('@/views/Management/blogPublish/index.vue')
+    path: '/regular',
+    meta: {
+      isHeader: false
+    },
+    component: () => import('@/views/Regular/index.vue'),
   },
   {
-    path: '/share',
-    component: () => import('@/views/Share/index.vue'),
-  },
+    path: '/echarts',
+    meta: {
+      isHeader: false
+    },
+    component: () => import('@/views/Echarts/index.vue'),
+  }
 ]
 
 const router = createRouter({

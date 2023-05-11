@@ -8,22 +8,25 @@ import '@/assets/style/index.scss'
 import '@/assets/icon/iconfont.css'
 // 引入element-plus 图标
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
-// 引入marksown编辑器
-// @ts-ignore
-import VueMarkdownEditor from '@kangc/v-md-editor';
-import '@kangc/v-md-editor/lib/style/base-editor.css';
-// @ts-ignore
-import vuepressTheme from '@kangc/v-md-editor/lib/theme/vuepress.js';
-import '@kangc/v-md-editor/lib/theme/style/vuepress.css';
-// @ts-ignore
-import Prism from 'prismjs';
-
-VueMarkdownEditor.use(vuepressTheme, {
-  Prism,
-});
+// vuex
+import store, { key } from "./store";
+// pinia
+import _pinia from "./pinia";
+// arco
+import ArcoVue from '@arco-design/web-vue';
+import '@arco-design/web-vue/dist/arco.css'
+// 导入vue-js-modal模态库
+// import vmodal from 'vue-js-modal'
 
 const app = createApp(App)
-app.use(VueMarkdownEditor)
+app.use(ArcoVue, {
+  comcomponentPrefix: 'a'
+})
+app.use(store, key)
+app.use(_pinia)
+// app.use(vmodal, {dialog: true,dynamicDefaults:{
+//   draggable: true
+// }})
 
 // 全局挂载element-plus icon组件
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {

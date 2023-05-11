@@ -1,29 +1,30 @@
 import axios from 'axios'
+import type { AxiosInstance, AxiosRequestConfig, AxiosResponse, AxiosError } from 'axios'
 import cookie from '@/storage/cookies'
 import { ElMessage } from 'element-plus'
 
 // axios基础配置
-const timeout = 50000
-const baseUrl = 'http://192.168.0.21:9527/'
-axios.defaults.timeout = timeout
-axios.defaults.baseURL = baseUrl
-let white:any [] = [] // 白名单
+const http: AxiosInstance = axios.create({
+  baseURL: process.env.BASE_URL,
+  timeout: 5000
+})
+
+const white: any [] = [] // 白名单
 // 请求拦截器
-axios.interceptors.request.use(
-  (config:any): any => {
-    let token = cookie.cookieRead('token')
+http.interceptors.request.use(
+  (config: AxiosRequestConfig) => {
+    const token = cookie.cookieRead('token')
     // 判断指定接口不带token
     if (token && !white.includes(config.url)) {
-      config.headers.Authorization = `Bearer ${token}`
+      config.headers!.Authorization = `Bearer ${token}`
     }
-    config.headers.tag = 'burry'
     return config
   },
-  (error:any): Promise<never> => Promise.reject(error),
+  (error: AxiosError): Promise<never> => Promise.reject(error),
 )
 // 响应拦截器
-axios.interceptors.response.use(
-  (response:any): any => response,
+http.interceptors.response.use(
+  (response: AxiosResponse): any => response,
   (error:any): Promise<never> => {
     if (error.response) {
       switch (error.response.status) {
@@ -47,7 +48,7 @@ export default {
         method: 'get',
         params,
         url,
-      }).then((res:any): any => {
+      }).then((res: AxiosResponse) => {
         resolve(res)
       })
     })
@@ -58,7 +59,7 @@ export default {
         method: 'post',
         data,
         url,
-      }).then((res:any): any => {
+      }).then((res: AxiosResponse) => {
         resolve(res)
       })
     })
@@ -69,7 +70,7 @@ export default {
         method: 'delete',
         data,
         url,
-      }).then((res:any): any => {
+      }).then((res: AxiosResponse) => {
         resolve(res)
       })
     })
