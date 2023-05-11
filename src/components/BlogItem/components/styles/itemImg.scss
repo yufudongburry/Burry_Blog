@@ -1,5 +1,8 @@
 .item-img {
   height: 100%;
   width: 17.5rem;
-  background: orange;
+  border-radius: 1rem;
+  margin: 0 10px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 20px -8px rgba(#000, .5);
 }

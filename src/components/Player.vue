@@ -78,14 +78,14 @@ const props = defineProps({
         {
           name: 'HLS',
           artist: 'artist',
-          url: 'https://anime-music-files.jijidown.com/5b850d00b02de24c618855ad_128.mp3?t=1678269196&sign=B6A41EDECA3BD00432041473196DA561',
+          url: 'https://burry-swtshs.oss-cn-hangzhou.aliyuncs.com/ptoto/1.mp3',
           cover: 'https://shigongbang.obs.cn-east-3.myhuaweicloud.com/member_center/610000/2021092511519193019933.JPG',
           lrc: '[00:00.00]APlayer\n[00:04.01]is\n[00:08.02]amazing'
         },
         {
           name: 'HLS',
           artist: 'artist',
-          url: 'https://anime-music-files.jijidown.com/5b850d00b02de24c618855ad_128.mp3?t=1678269196&sign=B6A41EDECA3BD00432041473196DA561',
+          url: 'https://burry-swtshs.oss-cn-hangzhou.aliyuncs.com/ptoto/1.mp3',
           cover: 'https://shigongbang.obs.cn-east-3.myhuaweicloud.com/member_center/610000/2021092511519193019933.JPG',
           lrc: '[00:00.00]APlayer\n[00:04.01]is\n[00:08.02]amazing'
         }

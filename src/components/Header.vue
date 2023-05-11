@@ -6,6 +6,8 @@
         class="nav-item cursor"
         v-for="(item, index) in headerList"
         :key="index"
+        :class="{ active: item.url == route.path }"
+        @click="toPage(item)"
       >
         <svg class="item-icon">
           <use :xlink:href="`${svgIcons}${item.icon}`"></use>
@@ -24,13 +26,16 @@
 </template>
 
 <script setup lang="ts">
+import { useRouter, useRoute } from 'vue-router';
 import { Search } from '@element-plus/icons-vue'
 import svgIcons from '@/assets/img/yancey-official-blog-svg-icons.svg';
 
-const headerList = [
+const headerList: {
+  
+} = [
   {
     label: 'Home',
-    url: '/home',
+    url: '/',
     icon: '#home'
   },
   {
@@ -54,13 +59,22 @@ const headerList = [
     icon: '#archive-black-box'
   },
 ]
-
+const router = useRouter()
+const route = useRoute()
 // 搜索
 const searchVal = ref('')
 const searchChange = (): void => {
   console.log(searchVal.value)
 }
 
+const toPage = (item: {
+  label: string,
+  url: string,
+  icon: string
+}):void => {
+  console.log(item,'pppp');
+  router.push(item.url)
+}
 </script>
 
 <style lang="scss" scoped>

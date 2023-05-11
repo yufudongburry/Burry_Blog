@@ -1,5 +1,9 @@
 .item-text {
   height: 100%;
   width: 32.5rem;
-  background: salmon;
+  border-radius: 1rem;
+  margin: 0 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 20px -8px rgba(#000, .5);
 }

@@ -10,14 +10,14 @@ const routes: RouteRecordRaw[] = [
     component: () => import('@/views/Home/index.vue'),
   },
   {
-    path: '/regular',
+    path: '/blog',
     meta: {
       isHeader: false
     },
     component: () => import('@/views/Regular/index.vue'),
   },
   {
-    path: '/echarts',
+    path: '/music',
     meta: {
       isHeader: false
     },

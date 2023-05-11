@@ -55,6 +55,14 @@
     }
   }
 }
+.active {
+  color: orange;
+  .item-icon {
+    fill: orange;
+    animation: horizontal 2s ease infinite;
+    animation-iteration-count: 1;
+  }
+}
 .item-icon {
   margin-right: 0.5rem;
   height: 1rem;
